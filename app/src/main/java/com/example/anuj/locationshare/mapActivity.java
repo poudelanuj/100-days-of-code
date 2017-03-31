@@ -50,12 +50,18 @@ public class mapActivity extends FragmentActivity implements OnMapReadyCallback 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-       // floatingActionButton=(FloatingActionButton)findViewById(R.id.upload);
+
+        //floatingActionButton=(FloatingActionButton)findViewById(R.id.upload);
+
 
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
             checkLocationPermission();
         }
+
         /*floatingActionButton.setOnClickListener(new View.OnClickListener() {
+=======
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+>>>>>>> e12588ef7ad534b341dec0dcda31860ff97bebed
             @Override
             public void onClick(View v) {
                 final Dialog dialog=new Dialog(context);
@@ -77,6 +83,7 @@ public class mapActivity extends FragmentActivity implements OnMapReadyCallback 
 
                 dialog.show();
             }
+<<<<<<< HEAD
         });*/
 
 
@@ -228,4 +235,6 @@ public class mapActivity extends FragmentActivity implements OnMapReadyCallback 
             // You can add here other case statements according to your requirement.
         }
     }
+
 }
+

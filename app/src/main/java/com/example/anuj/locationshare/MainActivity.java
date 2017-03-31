@@ -1,9 +1,11 @@
 package com.example.anuj.locationshare;
 
+
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,14 +17,15 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SharedPreferences pref;
 
+    private SharedPreferences pref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         pref = getPreferences(0);
         initFragment();
 
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     private void initFragment(){
         Fragment fragment;
         if(pref.getBoolean(Constants.IS_LOGGED_IN,false)){
@@ -69,4 +73,5 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.fragment_frame,fragment);
         ft.commit();
     }
+
 }
