@@ -6,7 +6,7 @@ package com.example.anuj.locationshare;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://192.168.1.2/";
+    public static final String BASE_URL = "http://192.168.1.4/";
     public static final String REGISTER_OPERATION = "register";
     public static final String LOGIN_OPERATION = "login";
     public static final String CHANGE_PASSWORD_OPERATION = "chgPass";

@@ -131,7 +131,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         Fragment register = new RegisterFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_frame,register);
+        ft.replace(R.id.fragment2_frame,register);
         ft.commit();
     }
 
@@ -139,7 +139,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         Fragment profile = new ProfileFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_frame,profile);
+        ft.replace(R.id.fragment2_frame,profile);
         ft.commit();
     }
 }
